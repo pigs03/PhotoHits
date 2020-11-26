@@ -78,11 +78,11 @@ a {
   text-decoration: none;
 }
 
-.content {
+.title {
   position: relative;
 }
 
-.content h2 {
+.title h2 {
   font-size: 70px;
   color: white;
   position: absolute;
@@ -91,7 +91,7 @@ a {
   transform: translate(-50%);
 }
 
-.content p {
+.title p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
   color: white;
