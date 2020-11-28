@@ -22,8 +22,8 @@ class ImageFactory extends Factory
     public function definition()
     {
         return [
-            //
-            
+                'title' => $this->faker->array,
+                'content' => $this->faker->sentence,
         ];
     }
 }

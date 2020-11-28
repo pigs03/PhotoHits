@@ -13,10 +13,11 @@
     @include('header')
   </header>
   <div class="title">
-    <img src="./image/paris-3296269_1280.jpg" alt="title画像" class="title_image">
+    <img src="./images/paris-3296269_1280.jpg" alt="title画像" class="title_image">
     <h2>PhotoHits</h2>
     <p>PhotoHitsで更なる体験を</p>
     <form action="#" method="POST">
+      @csrf
       <input type="submit" value="" class="searchimage">
       <input type="text" name="searchform" id="searchform" value="" placeholder="画像を検索" autocomplete="off">
     </form>
