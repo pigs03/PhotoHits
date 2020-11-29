@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ImageRequest;
 use Illuminate\Http\Request;
 use App\Models\Image;
+use GuzzleHttp\Promise\Create;
 
 class ImageController extends Controller
 {
@@ -19,8 +20,11 @@ class ImageController extends Controller
 
     //画像登録
     public function exeStore(ImageRequest $request) {
-    $inputs = $request->all();
-    Image::create($inputs);
+      $file_data = $request->except('img');
+     $file_path = $request->file('img')->store('images/');
+    Image::create($file_data, $file_path);
+    /*$inputs = $request->all();
+    Image::create($inputs);*/
     }
    
 }
