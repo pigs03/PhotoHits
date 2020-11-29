@@ -6,5 +6,5 @@
   <li><a href="#">ログイン</a></li>
 </ul>
 <div class="upload_form">
-  <a href="#">アップロード</a>
+  <a href="{{ route('create') }}">アップロード</a>
 </div>
